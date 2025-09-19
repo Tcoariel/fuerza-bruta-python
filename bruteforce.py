@@ -29,7 +29,7 @@ def fuerza_bruta(contraseña, alfabeto):
                 print(f"Intentos necesarios: {intentos}")
                 print(f"Tiempo total de ejecución: {fin_total - inicio_total:.4f} segundos")
                 
-                # Graficar
+                
                 plt.plot(longitudes, tiempos, marker='o')
                 plt.xlabel("Longitud de intento")
                 plt.ylabel("Tiempo (segundos)")
