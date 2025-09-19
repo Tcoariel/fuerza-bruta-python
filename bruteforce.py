@@ -6,14 +6,14 @@ contraseña  = "ABC1"
 
 def fuerza_bruta(contraseña, alfabeto):
     intentos = 0
-    tiempos = []      # Lista para guardar tiempo por longitud
-    longitudes = []   # Lista para guardar la longitud actual
+    tiempos = []      
+    longitudes = []   
     inicio_total = time.time()
     
     longitud = 1
     while True:
         max_num = len(alfabeto) ** longitud
-        inicio = time.time()  # Tiempo al iniciar esta longitud
+        inicio = time.time()  
         
         for num in range(max_num):
             intento = ""
@@ -39,8 +39,8 @@ def fuerza_bruta(contraseña, alfabeto):
                 return
 
         fin = time.time()
-        tiempos.append(fin - inicio)  # Tiempo tomado para esta longitud
-        longitudes.append(longitud)   # Registrar la longitud
+        tiempos.append(fin - inicio)  
+        longitudes.append(longitud)   
         longitud += 1
         
         if longitud > len(contraseña):
